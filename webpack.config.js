@@ -52,7 +52,8 @@ module.exports = {
   // third-party libraries
   // these dependencies are (or should be) provided by the environment andd need not to be bundled
   externals: {
-    vue: "Vue"
+    vue: "Vue",
+    swal: "swal"
   },
 
   // plugins
