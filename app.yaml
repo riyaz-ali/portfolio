@@ -14,7 +14,14 @@ handlers:
 ## serve static content from dist/assets/ directory
 - url: /assets/(.*)
   static_files: dist/assets/\1
-  upload: dist/assets
+  upload: dist/(.*)
 
 # [END] Handlers
-  
+
+# [START] Skip File
+skip_files:
+- ^(.*/)?node_modules/*$
+- ^(.*/)?src/*$
+- ^(.*/)?\..*$
+
+# [END] Skip File
