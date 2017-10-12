@@ -7,6 +7,9 @@
 // Library imports
 import Vue from "vue";
 
+// root application component
+import App from "./App.vue";
+
 window['$app'] = new Vue({
-  render: h => h('h1', ['Hello World!'])
+  render: h => h(App)
 }).$mount("#application-mount");
