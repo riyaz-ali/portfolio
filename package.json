@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "rimraf ./dist && cross-env NODE_ENV=production webpack --progress --hide-modules",
-    "build:ncmp": "rimraf ./dist && cross-env NODE_ENV=development webpack --progress --hide-modules"
+    "build:ncmp": "rimraf ./dist && cross-env NODE_ENV=development webpack --progress --hide-modules",
+    "gae_server": "dev_appserver.py app.yaml --port=8080 --host=0.0.0.0"
   },
   "author": "Riyaz Ali",
   "license": "ISC",

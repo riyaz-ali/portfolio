@@ -1,0 +1,20 @@
+# Google App Engine's Deployment Descriptor
+runtime: python27
+api_version: 1
+threadsafe: true
+
+# [START] Handlers
+## Serve static index file for root
+handlers:
+- url: /
+  static_files: dist/index.html
+  upload: dist/index.html
+
+## For all other paths starting with /assets/ 
+## serve static content from dist/assets/ directory
+- url: /assets/(.*)
+  static_files: dist/assets/\1
+  upload: dist/assets
+
+# [END] Handlers
+  
