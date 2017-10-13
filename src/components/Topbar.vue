@@ -2,7 +2,7 @@
   <nav class="row nav">
 
     <!-- logo -->
-    <div class="four columns">
+    <div class="one column">
       <a href="/">
         <svg class="brand" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
           <g>
@@ -13,13 +13,17 @@
       </a>
     </div>
 
-    <!-- menu options -->
+    <h1 class="four columns name navy">
+      Riyaz Ali <small>fullstack designer &amp; developer</small>
+    </h1>
+
+    <!-- menu options>
     <div class="menu four columns offset by-four">
       <a href="/">Home</a>
       <a href="#projects">Projects</a>
       <a href="javascript:swal('Under Contruction!', 'Hey there! Thanx for showing interest but my blog is still under construction.I\'ll update the link as soon as it goes live 😊😊😊')">Blog</a>
       <a href="#social">Social</a>
-    </div>
+    </div-->
   </nav>
 </template>
 
@@ -27,11 +31,32 @@
 nav.nav {
   margin: -10px -20px 0;
   max-width: none!important;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgba(0,0,0,0.09);
   padding: 25px 35px; // logo
   svg.brand {
     cursor: pointer;
-  } // menu
+  }
+
+  // name
+  .name {
+    height: 64px;
+    line-height: 64px;
+    margin: 0;
+    text-transform: uppercase;
+    margin-left: -35px;
+    position: relative;
+
+    small {
+      position: absolute;
+      bottom: -23px;
+      left: 0px;
+
+      font-size: .35em;
+      color: rgba(0,0,0,0.5);
+    }
+  }
+
+  // menu
   .menu {
     //border: 1px solid;
     height: 64px;
