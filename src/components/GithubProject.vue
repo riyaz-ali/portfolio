@@ -4,7 +4,7 @@
       <a class="avatar" :href="`https://github.com/${gh.owner}`" target="_blank">
         <img :src="gh.avatar">
       </a>
-      <strong class="name"><a href="https://github.com/riyaz-ali/portfolio" target="_blank">{{gh.name}}</a><sup class="language">{{ gh.language }}</sup></strong>
+      <strong class="name"><a :href="`https://github.com/${gh.owner}/${gh.name}`" target="_blank">{{gh.name}}</a><sup class="language">{{ gh.language }}</sup></strong>
       <span>Created by <a :href="`https://github.com/${gh.owner}`" target="_blank">{{ gh.owner }}</a></span>
       <a class="star" title="Star the project on Github" :href="`https://github.com/${gh.owner}/${gh.name}`" target="_blank"><i class="fa fa-star"></i></a>
     </div>
