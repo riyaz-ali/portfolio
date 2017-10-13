@@ -1,25 +1,41 @@
 <template>
   <div class="container">
-    <div class="row holder">
-      <div class="whole column bg-white">
+    <div class="row holder bg-white">
         <!-- Topbar -->
         <topbar />
-        <!-- Content Area -->
 
+        <!-- Content Area -->
+        <content-holder>
+          <p>{{ lipsum.generate(100) }}</p>
+          <p>{{ lipsum.generate(100) }}</p>
+          <p>{{ lipsum.generate(100) }}</p>
+          <p>{{ lipsum.generate(100) }}</p>
+          <p>{{ lipsum.generate(100) }}</p>
+          <p>{{ lipsum.generate(100) }}</p>
+          <p>{{ lipsum.generate(100) }}</p>
+          <p>{{ lipsum.generate(100) }}</p>
+        </content-holder>
         <!-- Footer -->
       </div>
-    </div>
   </div>
 </template>
 
 <script>
 // components
 import Topbar from "./components/Topbar.vue";
+import ContentHolder from "./components/ContentHolder.vue";
+
+// utils
+import lipsum from "./util/lipsum.js";
 
 export default {
   components: {
-    Topbar
-  }
+    Topbar,
+    ContentHolder
+  },
+  data: () => ({
+    lipsum
+  })
 }
 </script>
 
@@ -53,4 +69,3 @@ body { height: 100%; font-family: sans-serif; }
   max-width: none;
 }
 </style>
-
