@@ -7,12 +7,15 @@
         <svg class="brand" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
           <g>
             <rect x="5" y="5" width="50" height="50" class="stroke-navy fill-white" style="stroke-width: 10" />
-            <text x="15" y="37" width="40" height="40" font-size="20" class="fill-navy">RA</text>
+            <text x="17" y="37" width="40" height="40" font-size="20" class="fill-navy">RA</text>
           </g>
         </svg>
       </a>
       <h1 class="name navy">
-        Riyaz Ali <small>fullstack developer</small>
+        Riyaz Ali
+        <small>
+          <i v-for="i in [{ icon: 'code', alt: 'Loves to code' }, { icon: 'bicycle', alt: 'Loves riding around the town' }, { icon: 'terminal', alt: 'Loves the terminal' }, { icon: 'music', alt: 'Likes listening to music' }, { icon: 'chrome', alt: 'Is a Chrome fanboy' }]" :key="i.icon" class="fa" :title="i.alt" :class="`fa-${i.icon}`"></i>
+        </small>
       </h1>
     </div>
 
@@ -47,13 +50,17 @@ nav.nav {
     position: relative;
 
     small {
-     position: absolute;
-     bottom: 5px;
-     left: 0;
-     line-height: 0;
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      line-height: 0;
 
-     font-size: .35em;
-     color: rgba(0,0,0,0.5);
+      font-size: .45em;
+      color: rgba(0,0,0,0.5);
+
+      i {
+        margin: 0 5px;
+      }
     }
   }
 

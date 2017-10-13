@@ -45,7 +45,7 @@ $container-bg: #F44336; //rgba(0,0,0,0.5);
 
 /* set base height*/
 html,
-body { height: 100%; font-family: sans-serif; }
+body { height: 100%; font-family: "Karla", sans-serif; }
 
 .container {
   height: 100%;
@@ -61,11 +61,5 @@ body { height: 100%; font-family: sans-serif; }
   > .whole.column {
     height: 100%;
   }
-}
-
-/* override row margins */
-.row {
-  margin: 0;
-  max-width: none;
 }
 </style>
