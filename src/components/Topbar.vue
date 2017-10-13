@@ -14,7 +14,7 @@
     </div>
 
     <h1 class="four columns name navy">
-      Riyaz Ali <small>fullstack designer &amp; developer</small>
+      Riyaz Ali <small>fullstack developer</small>
     </h1>
 
     <!-- menu options>
@@ -29,10 +29,10 @@
 
 <style lang="scss">
 nav.nav {
-  margin: -10px -20px 0;
-  max-width: none!important;
+  //margin: -10px -20px 0;
+  // max-width: none!important;
   border-bottom: 1px solid rgba(0,0,0,0.09);
-  padding: 25px 35px; // logo
+  padding: 15px; //25px 35px; // logo
   svg.brand {
     cursor: pointer;
   }
@@ -48,8 +48,9 @@ nav.nav {
 
     small {
       position: absolute;
-      bottom: -23px;
-      left: 0px;
+      bottom: 0px;
+      left: 20px;
+      line-height: 0;
 
       font-size: .35em;
       color: rgba(0,0,0,0.5);
