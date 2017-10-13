@@ -2,7 +2,7 @@
   <nav class="row nav">
 
     <!-- logo -->
-    <div class="one column">
+    <div class="column">
       <a href="/">
         <svg class="brand" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
           <g>
@@ -11,11 +11,10 @@
           </g>
         </svg>
       </a>
+      <h1 class="name navy">
+        Riyaz Ali <small>fullstack developer</small>
+      </h1>
     </div>
-
-    <h1 class="four columns name navy">
-      Riyaz Ali <small>fullstack developer</small>
-    </h1>
 
     <!-- menu options>
     <div class="menu four columns offset by-four">
@@ -39,21 +38,22 @@ nav.nav {
 
   // name
   .name {
-    height: 64px;
-    line-height: 64px;
-    margin: 0;
+    display: inline-block;
+    margin: 0 10px;
     text-transform: uppercase;
-    margin-left: -35px;
+    height: 60px;
+    line-height: 60px;
+    vertical-align: top;
     position: relative;
 
     small {
-      position: absolute;
-      bottom: 0px;
-      left: 20px;
-      line-height: 0;
+     position: absolute;
+     bottom: 5px;
+     left: 0;
+     line-height: 0;
 
-      font-size: .35em;
-      color: rgba(0,0,0,0.5);
+     font-size: .35em;
+     color: rgba(0,0,0,0.5);
     }
   }
 
