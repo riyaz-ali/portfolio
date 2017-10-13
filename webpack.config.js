@@ -53,7 +53,8 @@ module.exports = {
   // these dependencies are (or should be) provided by the environment andd need not to be bundled
   externals: {
     vue: "Vue",
-    swal: "swal"
+    swal: "swal",
+    google: "google"
   },
 
   // plugins

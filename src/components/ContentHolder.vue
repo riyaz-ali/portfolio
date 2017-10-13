@@ -8,6 +8,7 @@
 
 <style lang="scss">
 .content {
+  color: rgba(0,0,0,0.8);
   height: calc(100% - 115px);
 
   .column {
