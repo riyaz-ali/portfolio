@@ -34,7 +34,7 @@
               You can always find my writings on my <a href="javascript:swal('Under Construction!', 'Hey there! Thanks for your interest but my blog is still under construction! I\'ll update the link soon. Sorry for the random surprise ;)', 'warning')">Blog</a>, my thoughts on <a href="https://twitter.com/riyaz2302" target="_blank">Twitter</a> and my code on <a href="https://github.com/riyaz-ali" target="_blank">Github</a>
             </p>
 
-            <h3>&dash; Or you can find me on &dash;</h3>
+            <h3>- Or you can find me on -</h3>
             <div class="links">
               <div>
                 <a class="stackoverflow" href="https://stackoverflow.com/users/6611700/riyaz-ali" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
