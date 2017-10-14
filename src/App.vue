@@ -9,7 +9,7 @@
           <h2 style="text-align: center; margin: 30px 0 20px;">Hello, my name is Riyaz. I'm a Fullstack Developer from India</h2>
 
           <!-- google map here -->
-          <google-map />
+          <google-map class="embed-map" />
 
           <!-- some bio -->
           <p class="bio">
@@ -45,6 +45,12 @@
                 <a class="email" href="mailto:hey@iamriyaz.com?subject=Hey" target="_blank"><i class="fa fa-envelope"></i> Email</a>
               </div>
             </div>
+          </div>
+
+          <!-- interested in project? mail me at hey@iamriyaz.com -->
+          <div class="interstitial bg-silver">
+            <h2>Interested in a project?</h2>
+            <a class="bg-navy" href="mailto:hey@iamriyaz.com?subject=Project+offer" target="_blank"><i class="fa fa-reply"></i> Contact me</a>
           </div>
 
         </content-holder>
@@ -132,6 +138,10 @@ body { height: 100%; font-family: "Karla", sans-serif; }
 }
 
 .content {
+  .embed-map {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
   .bio {
     font-size: 1.5em;
     text-align: center;
@@ -245,6 +255,57 @@ body { height: 100%; font-family: "Karla", sans-serif; }
         &.twitter { background-color: #1da1f2; }
         &.github { background-color: #24292e; }
         &.email { background-color: #ea4335; }
+      }
+    }
+  }
+
+
+  .interstitial {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 50px -20px -15px;
+    height: 200px;
+
+    h2 {
+      text-align: center;
+      font-size: 2em;
+      text-transform: uppercase;
+    }
+
+    a {
+      margin: 0 auto;
+      padding: 25px 25px 25px 50px;
+      display: block;
+      width: 200px;
+
+      color: #fff;
+      //background: #ea4335;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1em;
+      letter-spacing: 2px;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 2px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+      position: relative;
+      transition: box-shadow 0.2s;
+
+      i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 68px;
+        line-height: 68px;
+        width: 40px;
+        background: rgba(0,0,0,0.6);
+        text-align: center;
+        font-size: 1.2em;
+      }
+
+      &:hover {
+        box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.6);
       }
     }
   }
