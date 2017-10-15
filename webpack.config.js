@@ -8,6 +8,9 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var HtmlPlugin = require('html-webpack-plugin')
 var HtmlHDDPlugin = require('html-webpack-harddisk-plugin')
 
+// custom prerender plugin
+var PrerenderVue = require('./prerender.js')
+
 module.exports = {
   // entry point
   entry: './src/main.js',
@@ -99,6 +102,7 @@ if (process.env.NODE_ENV === 'production') {
     }),
     new webpack.LoaderOptionsPlugin({
       minimize: true
-    })
+    }),
+    new PrerenderVue(path.resolve(__dirname, './dist'), "index.html")
   ])
 }
